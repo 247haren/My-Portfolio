@@ -10,11 +10,10 @@ const About = () => {
             <span className="gradient-text">About Me</span>
           </h1>
           <h4 className="subtitle muted">
-              I began my journey in development and problem-solving on August 11, 2023,
-               focusing on frontend development with JavaScript, ReactJS, HTML, and CSS.
-                Passionate about learning and innovation, I’m dedicated to building user-
-                friendly applications and enhancing my skills in data structures and 
-                                            algorithms.
+              I am a Mechanical Engineering student at UIET, Panjab University, and the Convener of Jugaad Robotics Club of the tenure 2024-25, 
+              led 60+ engineers. I bridge hardware and software through projects 
+              in robotics, smart mobility, and automation. Passionate about innovation, I have hands-on experience in Web-Development, circuit design, 
+              data analysis, and developing practical engineering solutions from concept to completion.
           </h4>
         </div>
         <div className="group">

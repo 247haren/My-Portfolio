@@ -19,7 +19,7 @@ const Contact = () => {
         <div className="contact-form">
           <div className="top">
             <h1 className="title">
-              <span className="gradient-text">Join forces with me</span>
+              <span className="gradient-text">Contact Me</span>
             </h1>
             <p className="muted">
               "Feel free to reach out for collaborations, inquiries, or just to say Hello!"

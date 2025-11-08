@@ -12,11 +12,10 @@ const Hero = () => {
             Hey, I'm <span className="primary">Harendra Kumar</span>
           </h3>
           <h1 className='heading-1'>
-            A <span className="gradient-text">Fullstack</span> Web Developer
+            A <span className="gradient-text">Visionary</span>  Tech Innovator
           </h1>
           <p className='muted'>
-            Hi, I'm Harendra!
-I am an engineering student at the University Institute of Engineering and Technology (UIET), Panjab University, Chandigarh. I began my journey in development and problem-solving on January 21, 2024.
+            I'm a passionate engineering student who loves to bridges the gap between hardware and intelligence. I am currently pursuing my engineering at the University Institute of Engineering and Technology (UIET), Panjab University, Chandigarh.
           </p>
           <div className='flex-center buttons-wrapper'>
             <Link to='services' smooth={true} className='btn primary'>Learn more</Link>
