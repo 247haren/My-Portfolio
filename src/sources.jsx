@@ -8,15 +8,29 @@ import { IoCallOutline ,IoLocationOutline } from "react-icons/io5";
 import { GrUserExpert } from "react-icons/gr";
 import { MdOutlineSupportAgent,MdOutlineAlternateEmail } from "react-icons/md";
 import { RiExchange2Fill } from "react-icons/ri";
-import { FaInstagram, FaXTwitter, FaYoutube,FaLaptopCode,FaLinkedin,FaGithub} from "react-icons/fa6";
+import { FaInstagram, FaXTwitter, FaYoutube,FaLaptopCode,FaLinkedin,FaGithub,FaPython} from "react-icons/fa6";
 import { FaFacebookSquare,FaPaintBrush } from "react-icons/fa";
 import { TfiWrite } from 'react-icons/tfi'
 import {DiReact} from "react-icons/di";
 import {FaNodeJs} from "react-icons/fa";
-import {SiExpress,SiMongodb} from "react-icons/si";
+import {SiExpress,SiMongodb,SiArduino} from "react-icons/si";
 import { CgFigma } from "react-icons/cg";
 import { TbBrandReactNative } from "react-icons/tb";
 import { SiAdobexd } from "react-icons/si";
+import { FaRobot } from "react-icons/fa6";
+import Summer from './assets/Summer.png';
+import { PiMicrosoftExcelLogoFill } from "react-icons/pi";
+import Drive from './assets/Drive.jpg';
+import { GiSolderingIron } from "react-icons/gi";
+import { GrLanguage } from "react-icons/gr";
+import Arm from './assets/Arm.jpg'
+import { BsBadge3D } from "react-icons/bs";
+import { MdSensors } from "react-icons/md";
+import { TbCircuitMotor } from "react-icons/tb";
+import Charger from './assets/Charger.jpg'
+import LFR from './assets/LFR.jpg'
+import SOCCER from './assets/SOCCER.jpg'
+import KWalia from './assets/KWalia.jpg'
 
 export const tabs = [
     {name:"About Me",id:'about'},
@@ -28,23 +42,23 @@ export const tabs = [
 
 export const whyChooseMe = [
   {
-    title:"Unmatched Local Expertise",
+    title:"Team Leadership",
     icon:<GrUserExpert/>,
     link:"",
   },
   {
-    title:"Comprehensive Market Analysise",
+    title:"Innovative",
     icon:<IoMdAnalytics/>,
     link:"",
   },
   {
-    title:"Dedicated Client Support",
+    title:"Technologically Smart",
     icon:<MdOutlineSupportAgent/>,
     link:"",
   },
   {
-    title:"Innovative Marketing Strategies",
-    icon:<RiExchange2Fill/>,
+    title:"Robotics",
+    icon:<FaRobot/>,
     link:"",
   },
 ]
@@ -76,25 +90,28 @@ export const services = [
 
 export const skills = [
   {
-      title:"UI/UX",
+      title:"Programming Languages",
       data:[
           {
-              skill:"Figma",
+              skill:"C",
               level:"Experienced",
           },
           {
-              skill:"Sketch",
+              skill:"Embedded C",
+              level:"Experienced",
+          },
+          {
+              skill:"Python",
               level:"Intermediate",
           },
           {
-              skill:"XD",
-              level:"Intermediate",
+              skill:"Java",
+              level:"Experienced",
           },
-      ]
-  },
-  {
-      title:"Frontend Development",
-      data:[
+          {
+              skill:"JavaScript",
+              level:"Experienced",
+          },
           {
               skill:"HTML",
               level:"Experienced",
@@ -103,51 +120,162 @@ export const skills = [
               skill:"CSS",
               level:"Experienced",
           },
-          {
-              skill:"JavaScript",
-              level:"Experienced",
-          },
-          {
-              skill:"Tailwind",
-              level:"Intermediate",
-          },
-          {
-              skill:"Bootstrap",
-              level:"Experienced",
-          },
+      ]
+  },
+  {
+      title:"Frameworks & Libraries",
+      data:[
           {
               skill:"React",
               level:"Experienced",
           },
           {
-              skill:"React Native",
+              skill:"Node.js",
+              level:"Experienced",
+          },
+          {
+              skill:"Express",
+              level:"Intermediate",
+          },
+          {
+              skill:"Tailwind CSS",
+              level:"Experienced",
+          },
+          {
+              skill:"Matplotlib",
+              level:"Experienced",
+          },
+          // {
+          //     skill:"",
+          //     level:"Experienced",
+          // },
+          // {
+          //     skill:"",
+          //     level:"Experienced",
+          // },
+      ]
+  },
+  {
+      title:"Development Tools & Platforms",
+      data:[
+          {
+              skill:"Git & GitHub",
+              level:"Experienced",
+          },
+          {
+              skill:"Arduino IDE",
+              level:"Experienced",
+          },
+          {
+              skill:"Linux",
+              level:"Experienced",
+          },
+          {
+              skill:"Microsoft Excel",
               level:"Experienced",
           },
       ]
   },
   {
-      title:"Backend Development",
+      title:"Soft Skills",
       data:[
           {
-              skill:"Node JS",
+              skill:"Team Management",
+              // level:"Experienced",
+          },
+          {
+              skill:"Strategic Thinking",
+              // level:"Experienced",
+          },
+          {
+              skill:"Continuous Learning",
+              // level:"Experienced",
+          },
+          {
+              skill:"Time Optimization",
+              // level:"Experienced",
+          },
+          {
+              skill:"Leadership",
+              // level:"Experienced",
+          },
+          {
+              skill:"Collaboration",
+              // level:"Experienced",
+          },
+          
+          
+          
+          {
+              skill:"Documentation",
+              // level:"Experienced",
+          },
+      ]
+  },
+   {
+      title:"3D Printing & CAD",
+      data:[
+          {
+              skill:"3D Printing",
               level:"Experienced",
           },
           {
-              skill:"MangoDB",
-              level:"Intermediate",
-          },
-          {
-              skill:"PHP",
+              skill:"AutoCAD",
               level:"Experienced",
           },
           {
-              skill:"Python",
+              skill:"Slicing (Creality & Prusa)",
               level:"Intermediate",
           },
+          // {
+          //     skill:"Java",
+          //     level:"Experienced",
+          // },
+          // {
+          //     skill:"JavaScript",
+          //     level:"Experienced",
+          // },
+          // {
+          //     skill:"HTML",
+          //     level:"Experienced",
+          // },
+          // {
+          //     skill:"CSS",
+          //     level:"Experienced",
+          // },
+      ]
+  },
+   {
+      title:"Database",
+      data:[
           {
               skill:"MySQL",
               level:"Experienced",
           },
+          {
+              skill:"SQL",
+              level:"Experienced",
+          },
+          // {
+          //     skill:"Python",
+          //     level:"Intermediate",
+          // },
+          // {
+          //     skill:"Java",
+          //     level:"Experienced",
+          // },
+          // {
+          //     skill:"JavaScript",
+          //     level:"Experienced",
+          // },
+          // {
+          //     skill:"HTML",
+          //     level:"Experienced",
+          // },
+          // {
+          //     skill:"CSS",
+          //     level:"Experienced",
+          // },
       ]
   },
 ]
@@ -156,177 +284,182 @@ export const skills = [
 export const projects = [
   { 
     id:1,
-    title: 'AI Powered School',
-    image: 'https://cdn.dribbble.com/userupload/10064191/file/original-091c06a630285b93a5f81e29e882fe3c.png',
-    category:"UI/UX",
-    description: `Transforming education with AI, our School UI Design project revolutionizes the 
-                     learning experience. Seamlessly integrating intelligent features, personalized interfaces, 
-                     and intuitive navigation, our design empowers educators and students alike. Experience 
-                     innovation at its finest as we pave the way for a smarter, more efficient educational 
-                     journey.`,
+    title: 'Drive Cycle Development for Bhagalpur Road Conditions',
+    image: Summer,
+    category:"AI/ML",
+    description: `Developed drive cycles for Bhagalpur road conditions
+     during summer internship at IIIT Bhagalpur,
+     focusing on smart mobility solutions and sustainable transportation analysis.`,
     demoLink: "https://google.com/",
     stack:[
       {
-        name:"XD",
-        icon: <SiAdobexd/>,
-        iconColor:"skyblue",
+        name:"Python",
+        icon: <FaPython/>,
+        iconColor:"green",
+      },
+      {
+        name:"MS-Excel",
+        icon: <PiMicrosoftExcelLogoFill/>,
+        iconColor:"green",
+      },
+      {
+        name:"Arduino IDE",
+        icon: <SiArduino/>,
+        iconColor:"green",
+      },
+      {
+        name:"Embedded C",
+        icon: <GrLanguage/>,
+        iconColor:"limegreen",
       },
     ]
   },
   {
     id:2,
-    title: 'E-Commerce Application',
-    image: 'https://cdn.dribbble.com/userupload/8002230/file/original-c8eec16edea4d5c836b2bfabe7fbaa5a.jpg',
-    category:"Web",
-    description:`Enhance your online shopping experience with our E-Commerce Application 
-      UI design project. Seamlessly blending aesthetics with functionality, our intuitive 
-      interface offers easy navigation, personalized recommendations, and secure 
-      transactions. Elevate your digital storefront and captivate customers with a visually 
-      stunning design tailored to your brand`,
-    demoLink: "https://google.com/",
+    title: 'Driver Sleep Detection System',
+    image: Drive,
+    category:"AI/ML",
+    description:`Created an innovative system to detect driver drowsiness using Python libraries,
+     enhancing road safety through real-time monitoring and alert systems.`,
+    demoLink: "https://www.linkedin.com/posts/harendra-kumar-890127257_engineering-innovation-roadsafety-activity-7229561453316349952-z4QV",
     stack:[
       {
-        name:"ReactJs",
-        icon: <DiReact/>,
-        iconColor:"skyblue",
-      },
-      {
-        name:"NodeJs",
-        icon: <FaNodeJs/>,
+        name:"Python",
+        icon: <FaPython/>,
         iconColor:"green",
       },
       {
-        name:"ExpressJs",
-        icon: <SiExpress/>,
+        name:"Arduino IDE",
+        icon: <SiArduino/>,
+        iconColor:"green",
       },
       {
-        name:"MongoDB",
-        icon: <SiMongodb/>,
+        name:"Soldering",
+        icon: <GiSolderingIron/>,
+        iconColor:"green",
+      },
+      {
+        name:"Embedded C",
+        icon: <GrLanguage/>,
         iconColor:"limegreen",
       },
     ]
   },
   {
     id:3,
-    title: 'Robotic Engineering Web Application',
-    image: 'https://s3-alpha.figma.com/hub/file/5101537097/c4a1ed2c-4ab9-43fb-a248-d7ac6b0c3161-cover.png',
-    category:"Web",
-    description: `Unlock the future of robotics with our Robotic Engineering Web Application
-      project. Seamlessly integrating cutting-edge technology, data analytics, 
-      and collaborative tools, our platform empowers engineers to design, simulate, 
-      and optimize robotic systems. Experience innovation at its peak as we redefine the 
-      boundaries of robotic engineering.`,
-    demoLink: "https://google.com/",
+    title: 'Robotic Arm',
+    image: Arm,
+
+    category:"Robotics",
+    description: `Designed and engineered fully functional robotic arms that integrate advanced hardware systems with intelligent software control.`,
+    demoLink: "https://youtube.com/shorts/rav34KRBzOE?si=iwYD2M_whT___Ut4",
     stack:[
       {
-        name:"ReactJs",
-        icon: <DiReact/>,
-        iconColor:"skyblue",
-      },
-      {
-        name:"NodeJs",
-        icon: <FaNodeJs/>,
+        name:"Arduino IDE",
+        icon: <SiArduino/>,
         iconColor:"green",
       },
       {
-        name:"ExpressJs",
-        icon: <SiExpress/>,
-      },
-      {
-        name:"MongoDB",
-        icon: <SiMongodb/>,
+        name:"Embedded C",
+        icon: <GrLanguage/>,
         iconColor:"limegreen",
       },
       {
-        name:"MongoDBT",
-        icon: <SiMongodb/>,
+        name:"Servo Motors",
+        icon: <TbCircuitMotor/>,
+        iconColor:"green",
       },
       {
-        name:"MongoDBT",
-        icon: <SiMongodb/>,
+        name:"3D Printing",
+        icon: <BsBadge3D/>,
+        iconColor:"limegreen",
       },
       {
-        name:"MongoDBT",
-        icon: <SiMongodb/>,
+        name:"Sensor Integration",
+        icon: <MdSensors/>,
+        iconColor:"green",
       },
     ]
   },
   {
     id:4,
-    title: 'Project Management application',
-    image: 'https://miro.medium.com/v2/resize:fit:1400/1*6iO0wm8q4cByvxY6kB9WiQ.png',
-    category:"Apps",
-    description: `Simplify project coordination with our intuitive Project Management application. Track tasks, collaborate in real-time, and streamline workflows effortlessly. With customizable features and robust reporting, stay organized and efficient.
-                     Elevate your project management experience and achieve success with ease.`,
+    title: 'Line Following Robot',
+    image: LFR,
+    category:"Robotics",
+    description: `A Line Following Robot is an autonomous robot that is designed to follow a 
+pre-defined path or track, typically a black line or tape on a white surface. The robot 
+uses various sensors to detect the line and adjusts its movements accordingly to stay 
+on course.`,
     demoLink: "https://google.com/",
     stack:[
       {
-        name:"React Native",
-        icon: <TbBrandReactNative/>,
-        iconColor:"skyblue",
-      },
-      {
-        name:"NodeJs",
-        icon: <FaNodeJs/>,
+        name:"Arduino IDE",
+        icon: <SiArduino/>,
         iconColor:"green",
       },
       {
-        name:"ExpressJs",
-        icon: <SiExpress/>,
+        name:"Embedded C",
+        icon: <GrLanguage/>,
+        iconColor:"limegreen",
       },
       {
-        name:"MongoDB",
-        icon: <SiMongodb/>,
+        name:"Motor Driver",
+        icon: <TbCircuitMotor/>,
+        iconColor:"green",
+      },
+      {
+        name:"3D Printing",
+        icon: <BsBadge3D/>,
         iconColor:"limegreen",
+      },
+      {
+        name:"Sensor Integration",
+        icon: <MdSensors/>,
+        iconColor:"green",
       },
     ]
   },
   {
     id:5,
-    title: 'Mobile bank - App Design',
-    image: 'https://i.pinimg.com/originals/a0/be/c3/a0bec3706210e6ab28470eee95bf5889.png',
-    category:"UI/UX",
-    description: `Experience banking at your fingertips with our sleek Mobile Bank app design. Seamlessly manage your finances on-the-go with intuitive navigation, secure transactions, and personalized insights. Enjoy a modern interface that prioritizes convenience and accessibility, revolutionizing your banking experience.`,
+    title: 'Wireless Charger',
+    image: Charger,
+    category:"Embedded",
+    description: `Designed and developed an efficient wireless charging station for electric vehicles using resonant inductive
+     coupling technology. This system enables convenient, cable-free charging through advanced power electronics and circuit design,
+      demonstrating innovative solutions for sustainable energy transfer in modern transportation.`,
     demoLink: "https://google.com/",
     stack:[
       {
-        name:"Figma",
-        icon: <CgFigma/>,
-        iconColor:"orangered",
+        name:"Integration",
+        icon: <MdSensors/>,
+        iconColor:"green",
+      },
+      {
+        name:"Soldering",
+        icon: <GiSolderingIron/>,
+        iconColor:"green",
       },
     ]
   },
   {
     id:6,
-    title: 'Quiz App Development',
-    image: 'https://i.pinimg.com/originals/b3/35/02/b33502e465346ace2a7f1df203d851a3.jpg',
-    category:"Apps",
-    description: `Elevate engagement and knowledge retention with our Quiz App 
-                    Development project. Seamlessly crafted for interactive learning 
-                    experiences, our app offers customizable quizzes, real-time feedback, 
-                    and captivating visuals. Empower users to test their knowledge anytime,
-                     anywhere, fostering a dynamic learning environment tailored to their 
-                     needs.`,
-      demoLink: "https://google.com/",
+    title: 'RoboSoccer',
+    image: SOCCER,
+    category:"Embedded",
+    description: `A manually operated soccer robot designed for competitive robotics event.
+     Built for agility and control, it combines robust mechanics with responsive electronics, 
+     allowing real-time human-guided gameplay through wired communication.`,
+      demoLink: "https://youtube.com/shorts/lpTznWLw6iw?feature=share",
     stack:[
       {
-        name:"React Native",
-        icon: <TbBrandReactNative/>,
-        iconColor:"skyblue",
-      },
-      {
-        name:"NodeJs",
-        icon: <FaNodeJs/>,
+        name:"Sensor Integration",
+        icon: <MdSensors/>,
         iconColor:"green",
       },
       {
-        name:"ExpressJs",
-        icon: <SiExpress/>,
-      },
-      {
-        name:"MongoDB",
-        icon: <SiMongodb/>,
-        iconColor:"limegreen",
+        name:"Soldering",
+        icon: <GiSolderingIron/>,
+        iconColor:"green",
       },
     ]
   },
@@ -335,43 +468,40 @@ export const projects = [
 export const clients = [
   {
     image:client1,
-    name:'Samuel Eze',
-    review:` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-           veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
-           veniam, quis nostrud exercitation ullamco laborisveniam, quis nostrud 
-           exercitation ullamco laboris`
+    name:'Vikash Kumar',
+    designation: 'SDE @Deloitte ',
+    review:` Ur presentation skill is quite good...Keep going 😊 `
   },
   {
-    image:client2,
-    name:'Richael Linda',
-    review:` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-           veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea`
+    image:KWalia,
+    name:'Kartikeya Walia',
+    designation:'Senior Lecturer @Nottingham Trent University, England, United Kingdom',
+    review:`Proud of you guys. Great to see Jugaad come such a long way. Next time I am in India,
+     I will make sure to visit and see some of the amazing work you guys have been doing.`
   },
-  {
-    image:client3,
-    name:'Gloria Chiwendu',
-    review:` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-           veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
-           veniam, quis nostrud exercitation ullamco laborisveniam, quis nostrud 
-           exercitation ullamco laborisveniam, quis nostrud exercitation ullamco laboris`
-  },
-  {
-    image:client4,
-    name:'Precious Stone',
-    review:` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-           veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea`
-  },
-  {
-    image:client5,
-    name:'Ndubisi John',
-    review:` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-           veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea`
-  },
+  // {
+  //   image:client3,
+  //   name:'Gloria Chiwendu',
+  //   review:` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+  //           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+  //          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+  //          veniam, quis nostrud exercitation ullamco laborisveniam, quis nostrud 
+  //          exercitation ullamco laborisveniam, quis nostrud exercitation ullamco laboris`
+  // },
+  // {
+  //   image:client4,
+  //   name:'Precious Stone',
+  //   review:` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+  //           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+  //          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea`
+  // },
+  // {
+  //   image:client5,
+  //   name:'Ndubisi John',
+  //   review:` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+  //           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+  //          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea`
+  // },
 
 ];
 

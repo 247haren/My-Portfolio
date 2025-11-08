@@ -32,7 +32,7 @@ const Testimonials = () => {
           <h1 className="heading-1">
             <span className="gradient-text">Testimonials</span>
           </h1>
-          <h4 className="sub-title">what my clients are saying</h4>
+          <h4 className="sub-title">What people say about my work</h4>
         </div>
         <Slider {...settings} className='testimonials-container' ref={ref}>
           {
@@ -45,7 +45,7 @@ const Testimonials = () => {
                   </div>
                   <div className="details">
                     <h3 className="name">{list.name}</h3>
-                    <small className="muted">CEO of microBank</small>
+                    <small className="muted">{list.designation}</small>
                   </div>
                 </div>
                 <p className="p muted content">{list.review}</p>

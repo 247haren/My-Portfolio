@@ -26,7 +26,7 @@
     margin-bottom: 10px;
 }
 .project-card .picture{
-    height: 350px;
+    height: 200px;
     overflow: hidden;
 }
 .project-card .picture .img{
@@ -43,7 +43,9 @@
 .project-card .middle{
     padding-bottom: 1rem;
     border-bottom: 1px solid var(--border-primary);
-    height: 160px;
+    min-height: 80px;
+    max-height: 160px;
+    /* height: 160px; */
     overflow-x: hidden;
     overflow-y: auto;
 }
@@ -57,6 +59,11 @@
     flex-direction: column;
     justify-content: space-between;
 }
+.project-card:hover {
+    transform: translateY(-8px); /* Add hover effect */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
 .project-card .stack-container{
     flex: 1;
     display: flex;

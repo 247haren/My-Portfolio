@@ -18,7 +18,7 @@ const ProjectCard = ({
                 <h2 className="title">{title}</h2>
             </div>
             <div className="middle">
-                <p className="muted description"></p>
+                <p className="muted description">{description}</p>
             </div>
             <div className="bottom">
                 <div className="stack-container">
