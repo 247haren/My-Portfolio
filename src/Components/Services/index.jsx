@@ -19,7 +19,7 @@ const Services = () => {
             services.map((service,index)=>(
               <div className="service" key={index}>
                 <div className="flex-center icon-wrapper">
-                  {services.icon}
+                  {service.icon}
                 </div>
                 <div className="details">
                   <h3 className="name gradient-text">{service.name}</h3>

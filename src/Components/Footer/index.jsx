@@ -8,13 +8,13 @@ const Footer = () => {
   return (
     <footer id='footer'>
       <div className="wrapper">
-        <div className="column">
+        <div className="column" data-aos="fade-right">
           <Logo/>
           <SocialHandles/>
         </div>
         {
           footer.map((list,index)=>(
-            <div className="column" key={index}>
+            <div className="column" data-aos="fade-right" key={index}>
               <h3 className="muted title">{list.title}</h3>
               {
                 list.routes.map((route,i)=>(

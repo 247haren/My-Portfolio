@@ -1,8 +1,4 @@
 import client1 from "./assets/client-1.jpeg";
-import client2 from "./assets/client-2.jpeg";
-import client3 from "./assets/client-3.jpeg";
-import client4 from "./assets/client-4.jpeg";
-import client5 from "./assets/client-5.jpeg";
 import { IoMdAnalytics} from "react-icons/io";
 import { IoCallOutline ,IoLocationOutline } from "react-icons/io5";
 import { GrUserExpert } from "react-icons/gr";
@@ -31,11 +27,13 @@ import Charger from './assets/Charger.jpg'
 import LFR from './assets/LFR.jpg'
 import SOCCER from './assets/SOCCER.jpg'
 import KWalia from './assets/KWalia.jpg'
+import JugaadWR from './assets/JugaadWR.png'
 
 export const tabs = [
     {name:"About Me",id:'about'},
     {name:"Skill",id:'skill'},
-    {name:"Services",id:'services'},
+     
+    {name:"Experience",id:'experience'},
     {name:"Projects",id:'projects'},
     {name:"Testimonials",id:'testimonials'},
 ]
@@ -64,7 +62,7 @@ export const whyChooseMe = [
 ]
 export const services = [
   {
-    name:"UI/UX Design",
+    name:"Life @JUGAAD",
     icon:<FaPaintBrush/>,
     description:`Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione 
     voluptatum earum quam tempore, repellat aut vero ut eum, provident accusamus recusandae 
@@ -466,43 +464,19 @@ on course.`,
 ]
 
 export const clients = [
-  {
-    image:client1,
-    name:'Vikash Kumar',
-    designation: 'SDE @Deloitte ',
-    review:` Ur presentation skill is quite good...Keep going 😊 `
-  },
-  {
+    {
     image:KWalia,
     name:'Kartikeya Walia',
     designation:'Senior Lecturer @Nottingham Trent University, England, United Kingdom',
     review:`Proud of you guys. Great to see Jugaad come such a long way. Next time I am in India,
      I will make sure to visit and see some of the amazing work you guys have been doing.`
   },
-  // {
-  //   image:client3,
-  //   name:'Gloria Chiwendu',
-  //   review:` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-  //           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-  //          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
-  //          veniam, quis nostrud exercitation ullamco laborisveniam, quis nostrud 
-  //          exercitation ullamco laborisveniam, quis nostrud exercitation ullamco laboris`
-  // },
-  // {
-  //   image:client4,
-  //   name:'Precious Stone',
-  //   review:` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-  //           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-  //          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea`
-  // },
-  // {
-  //   image:client5,
-  //   name:'Ndubisi John',
-  //   review:` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-  //           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-  //          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea`
-  // },
-
+  {
+    image:client1,
+    name:'Vikash Kumar',
+    designation: 'SDE @Deloitte ',
+    review:` Ur presentation skill is quite good...Keep going 😊 `
+  },
 ];
 
 export const contactOptions = [

@@ -1,5 +1,6 @@
 import React,{useState,useRef,useEffect} from 'react'
 import './ProjectNavigation.css'
+import Aos from 'aos';
 
 const ProjectNavigation = ({
     tabs,
@@ -17,6 +18,7 @@ const ProjectNavigation = ({
         return sum;
     }
     useEffect(()=>{
+        Aos.refreshHard();
         const prevEl = itemsEls.current.filter((_,index)=>index <activeIndex);
         setOffset(
             sumArray(prevEl.map(item=>item.offsetWidth))
@@ -27,7 +29,7 @@ const ProjectNavigation = ({
     <nav className='project-navigation'>
         {
             tabs.map((tab,index)=>(
-                <button ref={(el)=>itemsEls.current[index]=el} onClick={()=>{setActiveIndex(index); onChange(tab)}} key={index}>
+                <button ref={(el)=>itemsEls.current[index]=el} onClick={()=>{setActiveIndex(index); onChange(tab); Aos.refreshHard();}} key={index}>
                     {tab}
                 </button>
             ))

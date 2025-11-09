@@ -7,7 +7,17 @@ import Projects from "./Components/Projects"
 import Testimonials from "./Components/Testimonials"
 import Contact from "./Components/Contact"
 import Footer from "./Components/Footer"
+import JUGAAD from "./Commons/Life@JUGAAD"
+import { useEffect } from "react"
+import Aos from "aos"
+import 'aos/dist/aos.css'
 function App() {
+  useEffect(()=>{
+    Aos.init({
+      duration:500,
+      easing:"ease-in-sine",
+    })
+  },[])
 
   return (
     <>
@@ -16,7 +26,8 @@ function App() {
     <Hero/>
     <About/>
     <Skill/>
-    <Services/>
+    {/* <Services/> */}
+    <JUGAAD/>
     <Projects/>
     <Testimonials/>
     <Contact/>
