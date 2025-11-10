@@ -59,7 +59,7 @@ const Contact = () => {
           </div>
           <div className="middle">
             <div className="flex row">
-              <input type='text' placeholder='First name' name='firstname' className='control' required/>
+              <input type='text' placeholder='First name' name='first name' className='control' required/>
               <input type='text' placeholder='Last name' name='last name' className='control' required/>
             </div>
             <div className="flex row">

@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
 import './JUGAAD.css';
 import JUGAAD1 from '../../assets/JUGAAD1.jpg'
-import JUGAAD_video from '../../assets/JUGAAD_video.mp4'
 import JUGAAD_video_thumbnail from '../../assets/JUGAAD_video_thumbnail.jpg'
 import JUGAAD2024 from '../../assets/JUGAAD2024.jpg'
 import Semiconductor from '../../assets/Semiconductor.jpg'
 import Marine from '../../assets/Marine.jpg'
-import Orientation from '../../assets/Orientation.mp4'
 import OrientationThumbnail from '../../assets/OrientationThumbnail.jpg'
+import YouTube from 'react-youtube';
 
 const JUGAAD = () => {
   const [activeMedia, setActiveMedia] = useState(0);
@@ -26,10 +25,10 @@ const JUGAAD = () => {
       caption: 'Team Jugaad Robotics 2024-25'
     },
     {
-      type: 'video',
-      src: JUGAAD_video,
-      poster: JUGAAD_video_thumbnail,
-      caption: 'Jugaad'
+      type: 'youtube',
+      videoId: 'n3V0qmjicnQ',
+      poster: OrientationThumbnail,
+      caption: 'Jugaad Orientation 25'
     },
     {
       type: 'image',
@@ -44,11 +43,11 @@ const JUGAAD = () => {
       caption: 'Marine Life 3D Printed at JUGAAD'
     },
     {
-      type: 'video',
-      src: Orientation,
-      poster: OrientationThumbnail,
+      type: 'youtube',
+      videoId: 'Dme34QkhNNM',
+      poster: JUGAAD_video_thumbnail,
       caption: 'Jugaad Orientation 25'
-    }
+    },
   ];
 
   const achievements = [
@@ -87,7 +86,27 @@ const JUGAAD = () => {
     'Website Development',
     'Image Processing Solutions'
   ];
+  const YouTubePlayer = ({ videoId, poster }) => {
+  const opts = {
+    height: '100%',
+    width: '100%',
+    playerVars: {
+      autoplay: 0,
+      modestbranding: 1,
+      rel: 0,
+    },
+  };
 
+  return (
+    <div className="youtube-container">
+      <YouTube 
+        videoId={videoId} 
+        opts={opts}
+        className="youtube-player"
+      />
+    </div>
+  );
+};
   return (
     <section id="experience" className="life-at-jugaad">
       <div className="container">
@@ -188,6 +207,11 @@ const JUGAAD = () => {
                     src={mediaItems[activeMedia].src} 
                     alt={mediaItems[activeMedia].alt}
                     className="media-display"
+                  />
+                ) : mediaItems[activeMedia].type === 'youtube' ? (
+                  <YouTubePlayer 
+                    videoId={mediaItems[activeMedia].videoId}
+                    poster={mediaItems[activeMedia].poster}
                   />
                 ) : (
                   <video 

@@ -28,7 +28,7 @@ const Navbar = () => {
             <SocialHandles/>
             <div className="box flex-center buttons">
                 <Link to='contact' smooth={true} className='btn primary contact-btn'>Hire me</Link>
-                <Link to='services' smooth={true} className='btn services-btn'>Services</Link>
+                <a href='https://drive.google.com/file/d/12h8v2oh_qI_Vuq1JbWrojl7en3UR0jHp/view?usp=sharing' target='_blank' rel='noopener noreferrer'  className='btn services-btn'>Resume</a>
                 <div className="flex-center icon-wrapper menu-btn" onClick={()=>setOpenSidebar(!openSidebar)}>
                     <HiMenu/>
                 </div>

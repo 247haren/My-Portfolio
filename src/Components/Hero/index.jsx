@@ -18,7 +18,7 @@ const Hero = () => {
             I'm a passionate engineering student who loves to bridges the gap between hardware and intelligence. I am currently pursuing my engineering at the University Institute of Engineering and Technology (UIET), Panjab University, Chandigarh.
           </p>
           <div className='flex-center buttons-wrapper'>
-            <Link to='services' smooth={true} className='btn primary' data-aos="fade-left" data-aos-delay="1200" data-aos-offset="50">Learn more</Link>
+            <Link to='experience' smooth={true} className='btn primary' data-aos="fade-left" data-aos-delay="1200" data-aos-offset="50">Experience</Link>
             <Link to='contact' smooth={true} className='btn' data-aos="fade-left" data-aos-delay="1200" data-aos-offset="50">Get started</Link>
           </div>
         </div>

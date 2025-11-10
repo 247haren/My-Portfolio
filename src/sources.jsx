@@ -31,9 +31,9 @@ import JugaadWR from './assets/JugaadWR.png'
 
 export const tabs = [
     {name:"About Me",id:'about'},
-    {name:"Skill",id:'skill'},
+    {name:"Skills",id:'skill'},
      
-    {name:"Experience",id:'experience'},
+    {name:"Experiences",id:'experience'},
     {name:"Projects",id:'projects'},
     {name:"Testimonials",id:'testimonials'},
 ]
@@ -500,22 +500,22 @@ export const contactOptions = [
 export const socialHandles = [
     {
       name:"Instagram",
-      icon:<FaInstagram />,
+      icon:<FaInstagram color="#ee2a7b" />,
       link:"https://www.instagram.com/harendrakumar522/",
     },
     {
       name:"LinkedIn",
-      icon:<FaLinkedin />,
+      icon:<FaLinkedin color="#0077b5"/>,
       link:"https://www.linkedin.com/in/harendra-kumar-890127257/",
     },
     {
       name:"Github",
-      icon:<FaGithub/>,
+      icon:<FaGithub color="white"/>,
       link:"https://github.com/247haren",
     },
     {
       name:"Youtube",
-      icon:<FaYoutube/>,
+      icon:<FaYoutube color="#ff0000"/>,
       link:"https://www.youtube.com/@harendraprydarshi",
     },
 ];
