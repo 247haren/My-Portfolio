@@ -5,7 +5,7 @@ const Logo = () => {
   return (
     <div className='logo'>
         <FaLaptopCode className='icon'/>
-        <h1>Harendra Kumar</h1>
+        <h1>Harendra</h1>
     </div>
   )
 }
