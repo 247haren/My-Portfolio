@@ -7,7 +7,7 @@ import Semiconductor from '../../assets/Semiconductor.jpg'
 import Marine from '../../assets/Marine.jpg'
 import OrientationThumbnail from '../../assets/OrientationThumbnail.jpg'
 import YouTube from 'react-youtube';
-import Hackathon from '../../assets/Hackathon.jpeg'
+import Hackathon from '../../assets/hackathon.jpeg'
 
 const JUGAAD = () => {
   const [activeMedia, setActiveMedia] = useState(0);
@@ -16,7 +16,7 @@ const JUGAAD = () => {
     {
       type: 'youtube',
       videoId: 'YDj7VtfSiQ4',
-      poster: Hackathon,
+      poster: hackathon,
       caption: 'Successfull Hackathon'
     },
     {
