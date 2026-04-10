@@ -7,7 +7,7 @@ import Semiconductor from '../../assets/Semiconductor.jpg'
 import Marine from '../../assets/Marine.jpg'
 import OrientationThumbnail from '../../assets/OrientationThumbnail.jpg'
 import YouTube from 'react-youtube';
-import Hackathon from '../../assets/hackathon.jpeg'
+import hackathon from '../../assets/hackathon.jpeg'
 
 const JUGAAD = () => {
   const [activeMedia, setActiveMedia] = useState(0);
