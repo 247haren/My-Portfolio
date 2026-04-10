@@ -7,11 +7,18 @@ import Semiconductor from '../../assets/Semiconductor.jpg'
 import Marine from '../../assets/Marine.jpg'
 import OrientationThumbnail from '../../assets/OrientationThumbnail.jpg'
 import YouTube from 'react-youtube';
+import Hackathon from '../../assets/Hackathon.jpeg'
 
 const JUGAAD = () => {
   const [activeMedia, setActiveMedia] = useState(0);
 
   const mediaItems = [
+    {
+      type: 'youtube',
+      videoId: 'YDj7VtfSiQ4',
+      poster: Hackathon,
+      caption: 'Successfull Hackathon'
+    },
     {
       type: 'image',
       src: JUGAAD1,
@@ -36,12 +43,12 @@ const JUGAAD = () => {
       alt: 'Semiconductor Workshop',
       caption: 'Semiconductor Workshop'
     },
-    {
-      type: 'image',
-      src: Marine,
-      alt: 'Marine Life at Jugaad Robotics',
-      caption: 'Marine Life 3D Printed at JUGAAD'
-    },
+    // {
+    //   type: 'image',
+    //   src: Marine,
+    //   alt: 'Marine Life at Jugaad Robotics',
+    //   caption: 'Marine Life 3D Printed at JUGAAD'
+    // },
     {
       type: 'youtube',
       videoId: 'Dme34QkhNNM',
